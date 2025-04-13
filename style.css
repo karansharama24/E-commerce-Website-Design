@@ -1,73 +1,298 @@
-/* Custom Styles for Features Section */
+ /* --- General Styles --- */
 
-#feature {
-    background-color: #f8f9fa; /* Light gray background */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
   }
   
-  .section_title {
-    color: #343a40; /* Dark gray title */
-    margin-bottom: 2rem;
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  /* --- Header Menu Section --- */
+  
+  .header_menu {
+    background-color: #ffffff; /* White background */
+  }
+  
+  .navbar-light .navbar-brand,
+  .navbar-light .navbar-nav .nav-link {
+    color: #333; /* Dark gray text */
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link:focus {
+    color: #e53935; /* Red on hover */
+  }
+  
+  .btn-outline-primary {
+    color: #e53935; /* Red button text */
+    border-color: #e53935; /* Red button border */
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #e53935; /* Red button background on hover */
+    color: white;
+  }
+  
+  .cart a {
+    color: #333;
+  }
+  
+  .cart a:hover {
+    color: #e53935;
+  }
+  
+  .badge-primary {
+    background-color: #e53935; /* Red badge */
+  }
+  
+  /* --- Carousel Section --- */
+  
+  .header_carousel {
+    /* Add any specific carousel styling here */
+  }
+  
+  /* --- Shop By Category Section --- */
+  
+  .shop_by_category {
+    background-color: #f8f8f8; /* Light gray background */
+  }
+  
+  .section_title h1 {
+    color: #e53935; /* Red title */
+    border-bottom: 2px solid #e53935;
+    padding-bottom: 10px;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden; /* Ensure image doesn't overflow rounded corners */
+  }
+  
+  .card img {
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* --- Products Section --- */
+  
+  .products {
+    background-color: #ffffff;
+  }
+  
+  .products .border-right {
+    border-right-color: #ddd !important; /* Lighter gray border */
+  }
+  
+  .products h4 {
+    color: #333;
+    border-bottom: 2px solid #e53935;
+    padding-bottom: 10px;
+  }
+  
+  .products .list-group-item {
+    border-color: #ddd;
+  }
+  
+  .products .form-control-range {
+    /* Style the range input if needed */
+  }
+  
+  .single_product {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .single_product:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product_img {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .product_img img {
+    max-height: 250px; /* Adjust as needed */
+    object-fit: contain;
+  }
+  
+  .product-caption {
+    padding: 15px;
+  }
+  
+  .product-ratting {
+    color: #ffc107; /* Gold stars */
+  }
+  
+  .product-ratting i {
+    margin-right: 2px;
+  }
+  
+  .product-ratting .far {
+    color: #ccc; /* Light gray for empty stars */
+  }
+  
+  .product-caption h5 a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .product-caption h5 a:hover {
+    color: #e53935;
+  }
+  
+  .price {
+    color: #e53935;
+    font-weight: bold;
+  }
+  
+  /* --- Feature Section --- */
+  
+  .feature {
+    background-color: #e53935; /* Red background */
+    color: white;
+  }
+  
+  .feature .section_title h1 {
+    color: white;
+    border-bottom-color: white;
   }
   
   .feature-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the columns */
+    justify-content: center;
   }
   
   .feature-col {
-    flex: 1 0 30%; /* Distribute columns evenly with some spacing */
+    flex: 1 0 30%;
     margin: 1rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Soft shadow */
-    border-radius: 0.5rem;
-    background-color: white; /* White cards */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
+    border-radius: 10px;
+    padding: 2rem;
+    transition: background-color 0.3s ease;
   }
   
   .feature-col:hover {
-    transform: translateY(-0.5rem); /* Slightly lift on hover */
-    box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
-  }
-  
-  .feature-item {
-    text-align: center;
-    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
   }
   
   .feature-icon {
-    color: #007bff; /* Blue icons */
+    color: white;
     margin-bottom: 1.5rem;
   }
   
   .feature-title {
-    color: #212529; /* Darker title */
+    color: white;
     font-size: 1.25rem;
     margin-bottom: 1rem;
   }
   
   .feature-text {
-    color: #6c757d; /* Gray text */
-    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
     line-height: 1.6;
   }
   
-  /* Responsive adjustments */
+  /* --- Footer Section --- */
   
-  @media (max-width: 768px) {
-    .feature-col {
-      flex-basis: 80%; /* Take up more width on smaller screens */
-    }
+  .footer_section {
+    background: #222; /* Darker gray background */
+    color: white;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
   }
   
-  @media (max-width: 576px) {
+  .footer_section a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+  }
+  
+  .footer_section a:hover {
+    color: #e53935;
+  }
+  
+  .footer_title {
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer_links ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer_links ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer_links ul li a {
+    transition: color 0.3s ease;
+  }
+  
+  .footer_section img {
+    margin-bottom: 1rem;
+  }
+  
+  .border-top {
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  /* --- Back to Top Button --- */
+  
+  .backtop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .backtop.show {
+    opacity: 1;
+  }
+  
+  .backtop a {
+    background-color: rgba(229, 57, 53, 0.8); /* Red button */
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+  }
+  
+  .backtop a:hover {
+    background-color: #e53935;
+  }
+  
+  /* --- Responsive Design --- */
+  
+  @media (max-width: 768px) {
+    .header_menu .navbar-collapse {
+      text-align: center;
+    }
+  
+    .shop_by_category .row,
+    .products .row,
+    .feature .feature-row,
+    .footer_section .row {
+      flex-direction: column;
+    }
+  
     .feature-col {
-      flex-basis: 95%; /* Almost full width on very small screens */
-      margin: 0.5rem;
+      flex-basis: 80%;
     }
-    .feature-item {
-      padding: 1.5rem;
-    }
-    .feature-title {
-      font-size: 1.1rem;
+  
+    .footer_section {
+      text-align: center;
     }
   }
