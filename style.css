@@ -296,3 +296,6 @@ body {
       text-align: center;
     }
   }
+  * {
+    scroll-behavior: smooth;
+  }
