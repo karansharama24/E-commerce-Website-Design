@@ -1,0 +1,73 @@
+/* Custom Styles for Features Section */
+
+#feature {
+    background-color: #f8f9fa; /* Light gray background */
+  }
+  
+  .section_title {
+    color: #343a40; /* Dark gray title */
+    margin-bottom: 2rem;
+  }
+  
+  .feature-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the columns */
+  }
+  
+  .feature-col {
+    flex: 1 0 30%; /* Distribute columns evenly with some spacing */
+    margin: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Soft shadow */
+    border-radius: 0.5rem;
+    background-color: white; /* White cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  }
+  
+  .feature-col:hover {
+    transform: translateY(-0.5rem); /* Slightly lift on hover */
+    box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  .feature-item {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .feature-icon {
+    color: #007bff; /* Blue icons */
+    margin-bottom: 1.5rem;
+  }
+  
+  .feature-title {
+    color: #212529; /* Darker title */
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-text {
+    color: #6c757d; /* Gray text */
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Responsive adjustments */
+  
+  @media (max-width: 768px) {
+    .feature-col {
+      flex-basis: 80%; /* Take up more width on smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .feature-col {
+      flex-basis: 95%; /* Almost full width on very small screens */
+      margin: 0.5rem;
+    }
+    .feature-item {
+      padding: 1.5rem;
+    }
+    .feature-title {
+      font-size: 1.1rem;
+    }
+  }
