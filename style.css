@@ -303,110 +303,188 @@ body {
     font-family: 'Arial', sans-serif;
   }
 
-  <style>
-.container {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  /* CSS */
+
+
+.bg_cart_1 {
+  background-color: #f4f4f4;
 }
 
-.section_title {
-  margin-bottom: 3rem;
-}
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -1rem;
-  margin-right: -1rem;
-}
-
-.col-md-4 {
-  flex: 0 0 33.3333%;
-  max-width: 33.3333%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.col-12 {
-  flex: 0 0 100%;
-  max-width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 0.25rem;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  position: relative;
-}
-
-.card-body {
-  padding: 1rem;
-  flex: 1 1 auto;
-}
-
-.category_image {
-  position: relative;
-  width: 100%;
-}
-
-.category_image img {
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-  display: block;
-  height: 200px;
-  object-fit: cover;
-  width: 100%;
-}
-
-.category_label {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-}
-
-.category_label span {
-  border-radius: 0.25rem;
-  font-size: 0.875rem;
-  font-weight: 500;
-  padding: 0.25rem 0.5rem;
-}
-
-.card-title {
-  font-size: 1.25rem;
-  margin-bottom: 0.75rem;
-}
-
-.card-text {
-  font-size: 1rem;
-  line-height: 1.5;
+.section_title h1 {
+  font-size: 2rem;
+  color: #333;
   margin-bottom: 1rem;
 }
 
+
+.cart-page .container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+
+.cart-items {
+  margin-bottom: 1.5rem;
+}
+
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.cart-item img {
+  width: 100px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+
+.cart-item-details {
+  flex: 1;
+}
+
+
+.cart-item-details h5 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+
+.cart-item-details p {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 0.25rem;
+}
+
+
+.cart-item-quantity {
+  display: flex;
+  align-items: center;
+}
+
+
+.cart-item-quantity button {
+  border: 1px solid #ddd;
+  padding: 0.25rem 0.5rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+
+.cart-item-quantity input {
+  width: 40px;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 0.25rem;
+  font-size: 0.9rem;
+}
+
+
+.cart-item-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+
+.cart-summary {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.cart-summary h5 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+
+.cart-summary ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+
+.cart-summary li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.cart-summary li span {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
+.cart-summary li strong {
+  font-size: 1rem;
+  color: #333;
+}
+
+
+.cart-summary .btn-primary {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.cart-summary .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+
+.remove-item {
+  color: #888;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+
+.remove-item:hover {
+  color: #007bff;
+}
+
+
 @media (max-width: 768px) {
-  .col-md-4 {
-    flex: 0 0 50%;
-    max-width: 50%;
+  .cart-item {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .category_image img {
-    height: 150px;
+
+  .cart-item img {
+    margin-bottom: 1rem;
+  }
+
+
+  .cart-item-details {
+    margin-bottom: 1rem;
+  }
+
+
+  .cart-summary {
+    margin-top: 1.5rem;
   }
 }
-
-@media (max-width: 576px) {
-  .col-md-4 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  .category_image img {
-    height: 120px;
-  }
-}
-</style>
