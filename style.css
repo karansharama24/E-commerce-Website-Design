@@ -51,10 +51,6 @@ body {
   
   /* --- Carousel Section --- */
   
-  .header_carousel {
-    /* Add any specific carousel styling here */
-  }
-  
   /* --- Shop By Category Section --- */
   
   .shop_by_category {
@@ -101,9 +97,7 @@ body {
     border-color: #ddd;
   }
   
-  .products .form-control-range {
-    /* Style the range input if needed */
-  }
+
   
   .single_product {
     background-color: white;
@@ -303,4 +297,4 @@ body {
     font-family: 'Arial', sans-serif;
   }
 
-/**ok**/
+  
