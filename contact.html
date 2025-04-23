@@ -1,0 +1,202 @@
+<section class="contact py-5 my-5" id="contact">
+    <div class="container">
+        <div class="section_title text-center mb-5">
+            <h1 class="text-capitalize">Contact Us</h1>
+        </div>
+        <div class="row mb-5 contact-info-wrapper">
+            <div class="col-md-4 col-12 contact-info-box">
+                <div class="contact-info-icon">
+                    <i class="fas fa-phone-alt fa-3x"></i>
+                </div>
+                <div class="contact-info-content">
+                    <h3>Let's Talk</h3>
+                    <p><b>Phone:</b> +91-9876543210</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 contact-info-box">
+                <div class="contact-info-icon">
+                    <i class="fas fa-envelope-open fa-3x"></i>
+                </div>
+                <div class="contact-info-content">
+                    <h3>Drop a Line</h3>
+                    <p><b>Email:</b> xyz@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 contact-info-box">
+                <div class="contact-info-icon">
+                    <i class="far fa-life-ring fa-3x"></i>
+                </div>
+                <div class="contact-info-content">
+                    <h3>24x7 Support</h3>
+                    <p><b>Customer:</b> 1800 101 303</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-10 mx-auto mb-3 my-5 py-5 contact-form-wrapper">
+                <h3 class="text-center mb-3">Form</h3>
+                <form action="contact.html" method="POST" id="form">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input name="name" id="name" type="text" placeholder="Name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Email address</label>
+                        <input name="email" id="email" type="email" placeholder="Email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="msg" id="msg" class="form-control" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary  btn-block">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+.contact {
+    padding: 50px 0;
+    /*background-color: #f9f9f9; !* Light background for the whole section *!*/
+}
+
+.section_title h1 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    font-weight: 700; /* Make heading bold */
+    background-color: #f0f4f8;
+    padding: 0.75rem 1.5rem;
+    border-bottom: 3px solid #007bff; /* Stronger border */
+    display: inline-block;
+}
+
+.contact-info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* More balanced spacing */
+    margin-bottom: 3rem;
+}
+
+.contact-info-box {
+    text-align: center;
+    padding: 2rem; /* Increased padding */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+    margin-bottom: 2rem;
+    background-color: #ffffff; /* White background for info boxes */
+    border: 1px solid #e0e0e0; /* Slightly darker border */
+}
+
+.contact-info-box:hover {
+    transform: translateY(-10px); /* Increased hover effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+}
+
+.contact-info-icon {
+    font-size: 3.5rem; /* Larger icons */
+    margin-bottom: 1.5rem;
+    color: #007bff;
+}
+
+.contact-info-content h3 {
+    font-size: 1.3rem; /* Increased font size */
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.contact-info-content p {
+    font-size: 1.1rem; /* Increased font size */
+    color: #666;
+    line-height: 1.8; /* Improved line height for readability */
+}
+
+.contact-form-wrapper {
+    background: #ffffff;
+    border-radius: 15px; /* More rounded corners */
+    padding: 2.5rem; /* Increased padding */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+    border: 1px solid #e0e0e0;
+}
+
+.contact-form-wrapper h3{
+    font-size: 1.8rem;
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+
+form .form-group label {
+    font-weight: 600; /* Make labels bold */
+    color: #2c3e50;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    display: block; /* Ensure label takes full width */
+}
+
+form .form-control {
+    border: 2px solid #007bff;
+    border-radius: 8px; /* More rounded corners for form controls */
+    font-size: 1.1rem; /* Increased font size */
+    padding: 0.8rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15); /* Refined focus shadow */
+    outline: none; /* Remove default outline */
+}
+
+form textarea.form-control {
+    min-height: 150px; /* Increased height for message box */
+    resize: vertical;
+}
+
+form button[type="submit"] {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600; /* Make button text bold */
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px; /* More rounded corners for button */
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Added shadow transition */
+    width: 100%; /* Make button full width */
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+form button[type="submit"]:active{
+     transform: translateY(0);
+    box-shadow: none;
+}
+
+@media (max-width: 992px) {
+    .contact-info-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info-box {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 768px) {
+    .contact-info-wrapper {
+        justify-content: space-around;
+    }
+    .contact-info-box {
+        flex: 0 0 30%;
+        max-width: 320px;
+    }
+}
+</style>
