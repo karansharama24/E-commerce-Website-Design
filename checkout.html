@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .bg_checkout_1 {
+            background-color: #f8f9fa; /* Light background for the card */
+        }
+        .form-group label {
+            font-weight: bold; /* Make labels bold */
+            color: #343a40; /* Darker text for labels */
+        }
+        .form-control {
+            border-radius: 5px; /* Slightly rounded corners for form controls */
+            border: 1px solid #ced4da; /* Use Bootstrap's default border color */
+        }
+        .form-control:focus {
+            border-color: #007bff; /* Highlight border on focus */
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Add focus shadow */
+        }
+        .custom-select {
+            border-radius: 5px;
+            border: 1px solid #ced4da;
+        }
+        .custom-select:focus {
+             border-color: #007bff; /* Highlight border on focus */
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Add focus shadow */
+        }
+
+        .btn-primary {
+            background-color: #007bff; /* Use Bootstrap's primary color */
+            border-color: #007bff;
+            border-radius: 5px; /* Rounded corners for buttons */
+            padding: 10px 20px; /* Adjust padding as needed */
+        }
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+            border-color: #0056b3;
+        }
+        .btn-primary:focus {
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); /* Add focus shadow to button */
+        }
+
+        .list-group-item {
+            padding: 8px 15px; /* Adjust padding for list items */
+            border-radius: 0; /* Remove border radius from list items */
+        }
+        .list-group-item:nth-child(odd) {
+            background-color: #e9ecef; /* Light background for odd items for better readability */
+        }
+
+        .text-center a {
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="Checkout py-5 my-5" id="Checkout">
+        <div class="container ">
+            <div class="section_title text-center mb-5">
+                <h1 class="text-capitalize">Checkout</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card bg_checkout_1 pb-5">
+                        <div class="card-body">
+                            <h5 class="mb-5">Billing details</h5>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group mb-0 mb-lg-4">
+                                        <label for="firstName">First name</label>
+                                        <input type="text" id="firstName" class="form-control mb-0 mb-lg-2">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group md-outline">
+                                        <label for="lastName">Last name</label>
+                                        <input type="text" id="lastName" class="form-control">
+                                    </div>
+                                </div>
+                                </div>
+                            <div class="form-group">
+                                <label for="form18">Phone</label>
+                                <input type="number" id="form18" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form19">Email address</label>
+                                <input type="email" id="form19" class="form-control">
+                            </div>
+
+                            <div class="d-flex flex-wrap">
+                                <div class="w-100">
+                                    <label>Country</label>
+                                    <select class="custom-select form-group">
+                                        <option value="" selected>Choose your option</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form14">Address Line 1</label>
+                                <input type="text" id="form14" placeholder="House number and street name"
+                                       class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form15">Address Line 2</label>
+                                <input type="text" id="form15" placeholder="Apartment, suite, unit (optional)"
+                                       class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form16">Postcode / ZIP</label>
+                                <input type="text" id="form16" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form17">Town / City</label>
+                                <input type="text" id="form17" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form76">Additional information</label>
+                                <textarea id="form76" class="md-textarea form-control"
+                                          rows="4"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <a href="order_confirmation.html" class="btn btn-primary">
+                                    <i class="fa fa-check mr-2"></i>Purchase
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                <div class="col-lg-4 bg_checkout_1 h-25 rounded">
+                    <div class="mb-3">
+                        <div class="pt-4">
+                            <h5 class="mb-3">Order summary</h5>
+                            <ul class="list-group list-group-flush">
+                                <li
+                                        class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-2">
+                                    <span>Product name 1</span>
+                                    <span>x2</span>
+                                    <span>₹25.98</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-2">
+                                    <span>Product name 2</span>
+                                    <span>x2</span>
+                                    <span>₹25.98</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center border-top px-0 mb-3">
+                                    <div>
+                                        <strong>Total amount</strong>
+                                        <strong>
+                                            <p class="mb-0">(including VAT)</p>
+                                        </strong>
+                                    </div>
+                                    <span><strong>₹53.98</strong></span> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
