@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+    <style>
+        .order_confirmation {
+            background-color: #f8f9fa; /* Light background */
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .order_confirmation .section_title h1 {
+            font-size: 2rem;
+            color: #2c3e50; /* Darker heading */
+            margin-bottom: 20px;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+
+        .order_confirmation .success_tick {
+            /*width: 150px; !* Increased size of the tick image *!*/
+             height: auto;
+            margin-bottom: 20px;
+        }
+
+        .order_confirmation h2 {
+            font-size: 1.5rem;
+            color: #2c3e50; /* Darker heading */
+            margin-bottom: 10px;
+        }
+
+        .order_confirmation h6 {
+            font-size: 1rem;
+            color: #667885;
+            margin-bottom: 5px;
+        }
+
+        .order_confirmation b {
+            color: #34495e; /* Strong color */
+        }
+
+        .order_confirmation .badge-danger {
+            background-color: #dc3545; /* Bootstrap's danger color */
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .order_confirmation .btn-primary {
+            background-color: #007bff; /* Bootstrap's primary color */
+            color: white;
+            padding: 12px 25px; /* Increased padding */
+            border-radius: 5px;
+            font-size: 1.1rem; /* Increased font size */
+            margin-top: 20px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+            border: none;
+        }
+
+        .order_confirmation .btn-primary:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+        }
+
+        .order_confirmation .btn-primary:active {
+            background-color: #004080; /* Even darker shade on active */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Smaller shadow on active */
+        }
+
+        @media (max-width: 768px) {
+            .order_confirmation {
+                padding: 30px 15px; /* Adjusted padding for smaller screens */
+            }
+
+            .order_confirmation .section_title h1 {
+                font-size: 1.8rem; /* Smaller heading on mobile */
+            }
+
+            .order_confirmation h2 {
+                font-size: 1.2rem; /* Smaller heading on mobile */
+            }
+
+            .order_confirmation h6 {
+                font-size: 0.9rem; /* Smaller text on mobile */
+            }
+
+            .order_confirmation .btn-primary {
+                font-size: 1rem; /* Smaller button text on mobile */
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="order_confirmation py-5 my-5" id="order_confirmation">
+        <div class="container ">
+            <div class="section_title text-center mb-5">
+                <h1 class="text-capitalize">order confirmation</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mx-auto text-center">
+                    <div>
+                        <img src="picture/okk.jpg" class="img img-fluid success_tick" alt="Success Tick">
+                    </div>
+                    <div>
+                        <h2>Thank you for your purchase!</h2>
+                        <h6>A confirmation email has been sent to <b>xyz@gmail.com</b></h6>
+                        <h6><span class="mr-2">Order No:</span><span><b>123123123123</b></span></h6>
+                        <h6>
+                            <span class="mr-2">Order Status:</span>
+                            <span>
+                                <b>
+                                    <span class="badge badge-danger">Pending</span>
+                                </b>
+                            </span>
+                        </h6>
+                        <a href="index.html" class="btn btn-primary btn-lg mt-5">Return to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
